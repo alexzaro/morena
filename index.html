@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -19,6 +19,7 @@
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+    <div id="preloader"></div>
     <!-- TOP NAV -->
     <div class="top-nav" id="home">
       <div class="container">
@@ -38,9 +39,13 @@
     </div>
 
     <!-- BOTTOM NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom border-info border-2"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">Morena<span class="dot">.</span></a>
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/morena-white.png" alt="Logo morena"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -55,25 +60,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Propuestas</a>
+              <a class="nav-link" href="includes/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Eventos</a>
+              <a class="nav-link" href="includes/propuestas.html">Propuestas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Noticias</a>
+              <a class="nav-link" href="includes/eventos.html">Eventos</a>
             </li>
           </ul>
-          <a
-            href="#"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            class="btn btn-brand ms-lg-3"
-            >Contacto</a
-          >
         </div>
       </div>
     </nav>
@@ -86,225 +84,62 @@
           <div class="row">
             <div class="col-12 col-lg-10 offset-lg-1 text-white">
               <h6 class="text-white text-uppercase">
-                El futuro es ahora, el cambio es contigo
+                <span class="text-undeline">Unidos</span> Florecemos
               </h6>
-              <h1 class="display-3 my-4">Apoya a nuestro <br />partido</h1>
-              <a href="#" class="btn btn-brand">Propuestas</a>
+              <h1 class="display-3 my-4">
+                Construyendo un
+                <br /><span class="box_title">Futuro</span> Juntos
+              </h1>
               <a href="#" class="btn btn-outline-light ms-3">Eventos</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <section id="services" class="text-center">
+    <section id="services" class="text-center bg-morena">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="intro">
-              <h6>Propuestas</h6>
-              <h1>Nuestras Propuestas</h1>
-              <p class="mx-auto">
-                Construyendo un mejor futuro con educación, salud y empleo para
-                todos
-              </p>
+              <h6>Somos Morena</h6>
+              <h1 class="text-start">Tu voto cuenta</h1>
             </div>
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="service">
-              <img src="img/icon3.png" alt="" />
-              <h5>Educación para el Futuro</h5>
-              <p>
-                Inverción en educación con acceso universal a tecnología y
-                capacitación docente.
-              </p>
+          <div class="col-md-5">
+            <p class="text-start">
+              Bolivia requiere un liderazgo firme para proteger nuestra
+              soberanía y recursos estratégicos, especialmente el litio y gas
+              natural, fortaleciendo una economía plural que beneficie a todo el
+              pueblo. Es vital defender nuestra autodeterminación mientras
+              impulsamos la industrialización y modernización de sectores clave.
+              <br /><br />
+              La transformación del país demanda unas Fuerzas Armadas
+              profesionales comprometidas con el desarrollo nacional y un
+              sistema de justicia transparente y accesible que elimine la
+              corrupción, garantizando así el progreso de nuestro Estado
+              Plurinacional.
+            </p>
+          </div>
+          <div class="col-md-7">
+            <div class="img-propuesta">
+              <img src="img/project2.jpg" alt="Eva" />
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service">
-              <img src="img/icon3.png" alt="" />
-              <h5>Salud de Calidad</h5>
-              <p>
-                Ampliación de hospitales, medicamentos gratuitos y atención
-                médica accesible para todos
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service">
-              <img src="img/icon3.png" alt="" />
-              <h5>Empleo y Desarrollo</h5>
-              <p>
-                Fomentamos el emprendimiento y el acceso a créditos para
-                pequeños y medianos negocios
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service">
-              <img src="img/icon3.png" alt="" />
-              <h5>Propuesta 4</h5>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service">
-              <img src="img/icon3.png" alt="" />
-              <h5>Propuesta 5</h5>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service">
-              <img src="img/icon3.png" alt="" />
-              <h5>Propuesta 6</h5>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-              </p>
-            </div>
-          </div>
+        </div>
+
+        <div class="d-grid gap-3 col-lg-4 col-md-6 mx-auto mt-5">
+          <a
+            href="./includes/propuestas.html"
+            class="btn btn-brand text-uppercase"
+            type="button"
+            >Ver todas las propuestas</a
+          >
         </div>
       </div>
     </section>
-
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="intro">
-              <h6>Eventos</h6>
-              <h1>Próximos Eventos</h1>
-              <p class="mx-auto">
-                Únete a nuestras actividades y sé parte del cambio
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="projects-slider" class="owl-theme owl-carousel">
-        <div class="project">
-          <div class="overlay"></div>
-          <img src="img/project1.jpg" alt="" />
-          <div class="content">
-            <h2>Gran Asamblea Nacional</h2>
-            <a href="#"><h6>Ver más</h6></a>
-          </div>
-        </div>
-        <div class="project">
-          <div class="overlay"></div>
-          <img src="img/project2.jpg" alt="" />
-          <div class="content">
-            <h2>Titulo evento</h2>
-            <a href="#"><h6>Ver más</h6></a>
-          </div>
-        </div>
-        <div class="project">
-          <div class="overlay"></div>
-          <img src="img/project3.jpg" alt="" />
-          <div class="content">
-            <h2>Titulo evento</h2>
-            <a href="#"><h6>Ver más</h6></a>
-          </div>
-        </div>
-        <div class="project">
-          <div class="overlay"></div>
-          <img src="img/project4.jpg" alt="" />
-          <div class="content">
-            <h2>Titulo evento</h2>
-            <a href="#"><h6>Ver más</h6></a>
-          </div>
-        </div>
-        <div class="project">
-          <div class="overlay"></div>
-          <img src="img/project5.jpg" alt="" />
-          <div class="content">
-            <h2>Titulo evento</h2>
-            <a href="#"><h6>Ver más</h6></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="intro">
-              <h6>Equipo</h6>
-              <h1>Conozca Nuestro Equipo</h1>
-              <p class="mx-auto">
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-8">
-            <div class="team-member">
-              <div class="image">
-                <img src="img/team_1.jpg" alt="" />
-                <div class="social-icons">
-                  <a href="#"><i class="bx bxl-facebook"></i></a>
-                  <a href="#"><i class="bx bxl-twitter"></i></a>
-                  <a href="#"><i class="bx bxl-instagram"></i></a>
-                  <a href="#"><i class="bx bxl-pinterest"></i></a>
-                </div>
-                <div class="overlay"></div>
-              </div>
-
-              <h5>Jose Luna Rios</h5>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-8">
-            <div class="team-member">
-              <div class="image">
-                <img src="img/team_2.jpg" alt="" />
-                <div class="social-icons">
-                  <a href="#"><i class="bx bxl-facebook"></i></a>
-                  <a href="#"><i class="bx bxl-twitter"></i></a>
-                  <a href="#"><i class="bx bxl-instagram"></i></a>
-                  <a href="#"><i class="bx bxl-pinterest"></i></a>
-                </div>
-                <div class="overlay"></div>
-              </div>
-
-              <h5>Maria Rene Rojas</h5>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-8">
-            <div class="team-member">
-              <div class="image">
-                <img src="img/team_3.jpg" alt="" />
-                <div class="social-icons">
-                  <a href="#"><i class="bx bxl-facebook"></i></a>
-                  <a href="#"><i class="bx bxl-twitter"></i></a>
-                  <a href="#"><i class="bx bxl-instagram"></i></a>
-                  <a href="#"><i class="bx bxl-pinterest"></i></a>
-                </div>
-                <div class="overlay"></div>
-              </div>
-
-              <h5>Angel Campos Gomez</h5>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <section class="social-media"></section>
     <section class="bg-light" id="reviews">
       <div class="owl-theme owl-carousel reviews-slider container">
         <div class="review">
@@ -368,90 +203,26 @@
       </div>
     </section>
 
-    <section id="blog">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="intro">
-              <h6>Noticias</h6>
-              <h1>&Uacute;ltimas Noticias</h1>
-              <p class="mx-auto">
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <article class="blog-post">
-              <img src="img/project5.jpg" alt="" />
-              <a href="#" class="tag">Educación</a>
-              <div class="content">
-                <small>20 Ene, 2025</small>
-                <h5>MORENA Presenta su Plan de Gobierno</h5>
-                <p>
-                  Con propuestas innovadoras para el desarrollo del país [leer
-                  más..]
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="blog-post">
-              <img src="img/project4.jpg" alt="" />
-              <a href="#" class="tag">Salud</a>
-              <div class="content">
-                <small>05 Ene, 2025</small>
-                <h5>Encuesta Revela Crecimiento en la Intención de Voto</h5>
-                <p>
-                  MORENA gana terreno con sus iniciativas sociales y económicas.
-                  [leer más..]
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="blog-post">
-              <img src="img/project2.jpg" alt="" />
-              <a href="#" class="tag">Empleo</a>
-              <div class="content">
-                <small>20 Ene, 2025</small>
-                <h5>Iniciativa de Empleo Joven</h5>
-                <p>
-                  Morena lanza un nuevo programa de empleo para jóvenes en todo
-                  el país [leer más..]
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
+    <footer class="border-top border-danger border-3">
       <div class="footer-top text-center">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
-              <h4 class="navbar-brand">Morena<span class="dot">.</span></h4>
-              <p>El futuro es ahora, el cambio es contigo</p>
-              <div class="col-auto social-icons">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-instagram"></i></a>
-                <a href="#"><i class="bx bxl-pinterest"></i></a>
-              </div>
+              <p class="img-footer">
+                <img src="img/morena-white.png" alt="Logo morena" />
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div class="footer-bottom text-center">
-        <p class="mb-0">
-          Copyright@2025. Movimiento Revolucionario Nacional | Developer
-          Alexzaro
-        </p>
+        <p class="mb-3 text-footer">© 2025 Morena | Developer Alexzaro</p>
+        <div class="col-auto social-icons">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-pinterest"></i></a>
+        </div>
       </div>
     </footer>
 

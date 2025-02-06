@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   --brand: #ff4d29;
@@ -9,6 +9,7 @@
   --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 
   /************
+  Fuente: Barlow
     --brand: #ff4d29;
     --dark: #092032;
     --body: #516171;
@@ -40,9 +41,9 @@
 */
 
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--body);
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 h1,
@@ -135,7 +136,7 @@ section {
 
 .slide1 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/bg_banner2.jpg);
+    url(../img/bg_banner1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,6 +148,21 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.bg-morena {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../img/bg-alto.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-propuesta img {
+  width: 80%;
 }
 
 .slide .display-3 {
@@ -177,12 +193,16 @@ section {
   box-shadow: var(--shadow);
 }
 
+.navbar-brand img {
+  width: 200px;
+}
+
 .social-icons a {
   width: 28px;
   height: 28px;
   display: inline-flex;
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.25);
+  /*background-color: rgba(255, 255, 255, 0.25);*/
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -223,6 +243,8 @@ section {
   border-color: var(--brand);
   background: var(--brand-bg);
   color: #fff;
+  padding: 15px 30px;
+  border-radius: 27px;
 }
 
 .btn-brand:hover {
@@ -272,10 +294,34 @@ section {
   color: #fff;
 }
 
-.service {
+/*.service {
   padding: 32px;
   background-color: #fff;
   box-shadow: var(--shadow);
+}*/
+.box_title {
+  -webkit-text-stroke: calc(1.26602px + 0.14239vw) #fff;
+  color: transparent;
+  /* font-family: Poppins;
+  font-size: calc(33.25243px + 4.46602vw)
+  font-weight: 700;
+  letter-spacing: calc(-10.55922px + 3.02913vw);
+  line-height: calc(64.2233px + 4.20712vw);
+  padding: 20px 0;
+  text-transform: uppercase;*/
+}
+.text-footer {
+  font-size: 13px;
+}
+.img-footer img {
+  width: 350px;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 20px 15px 40px 0 rgba(87, 64, 2, 0.08);
+  padding: 20px;
 }
 
 .service h5 {
@@ -285,8 +331,19 @@ section {
 
 .service img {
   width: 90px;
+  margin: 30px 0px;
+}
+/******************/
+.propuesta-number {
+  color: #000;
+  font-family: Poppins;
+  font-size: calc(27px + 0.9375vw);
+  font-weight: 700;
+  opacity: 0.08;
+  text-align: left;
 }
 
+/*****************/
 .project {
   position: relative;
   overflow: hidden;
@@ -535,4 +592,12 @@ input.form-control {
 .form-control:focus {
   box-shadow: none;
   border-color: var(--brand);
+}
+#preloader {
+  background: #000 url(../img/loader.gif) no-repeat center center;
+  background-size: 40%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
 }
