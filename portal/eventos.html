@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <title>Morena | Movimiento Revolucionario Nacional</title>
   </head>
@@ -45,8 +45,8 @@
     <!-- BOTTOM NAV -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="img/morena-white.png" alt="Logo morena"
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../img/morena-white.png" alt="Logo morena"
         /></a>
         <button
           class="navbar-toggler"
@@ -62,152 +62,78 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portal/nosotros.html">Nosotros</a>
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portal/propuestas.html">Propuestas</a>
+              <a class="nav-link" href="propuestas.html">Propuestas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portal/eventos.html">Eventos</a>
+              <a class="nav-link" href="eventos.html">Eventos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- SLIDER -->
-
-    <div class="owl-carousel owl-theme hero-slider">
-      <div class="slide slide2">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-10 offset-lg-1 text-white">
-              <h6 class="text-white text-uppercase">
-                <span class="text-undeline">Unidos</span> Florecemos
-              </h6>
-              <h1 class="display-3 my-4">
-                Construyendo un
-                <br /><span class="box_title">Futuro</span> Juntos
-              </h1>
-              <a href="#" class="btn btn-outline-light ms-3">Eventos</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section id="services" class="text-center bg-morena">
+    <section class="hero-morena">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
+        <div class="row align-items-center">
+          <div class="col">
             <div class="intro">
-              <h6>Somos Morena</h6>
-              <h2 class="text-start">Tu voto cuenta</h2>
+              <h6>Eventos</h6>
+              <h1 class="text-white">Próximos Eventos</h1>
+              <p class="mx-auto text-light">
+                Únete a nuestras actividades y sé parte del cambio
+              </p>
             </div>
           </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-5">
-            <p class="text-start">
-              Bolivia requiere un liderazgo firme para proteger nuestra
-              soberanía y recursos estratégicos, especialmente el litio y gas
-              natural, fortaleciendo una economía plural que beneficie a todo el
-              pueblo. Es vital defender nuestra autodeterminación mientras
-              impulsamos la industrialización y modernización de sectores clave.
-              <br /><br />
-              La transformación del país demanda unas Fuerzas Armadas
-              profesionales comprometidas con el desarrollo nacional y un
-              sistema de justicia transparente y accesible que elimine la
-              corrupción, garantizando así el progreso de nuestro Estado
-              Plurinacional.
-            </p>
-          </div>
-          <div class="col-md-7">
-            <div class="img-propuesta">
-              <img src="img/project2.jpg" alt="Eva" />
-            </div>
-          </div>
-        </div>
-
-        <div class="d-grid gap-3 col-lg-4 col-md-6 mx-auto mt-5">
-          <a
-            href="./portal/propuestas.html"
-            class="btn btn-brand text-uppercase"
-            type="button"
-            >Ver todas las propuestas</a
-          >
         </div>
       </div>
     </section>
-    <section class="bg-light" id="reviews">
-      <div class="owl-theme owl-carousel reviews-slider container">
-        <div class="review">
-          <div class="person">
-            <img src="img/mujer.jpg" alt="" />
-            <h5>Andrea Vargas</h5>
-            <small> Profesora de Secundaria (La Paz)</small>
+
+    <section id="portfolio bg-light">
+      <div id="projects-slider" class="owl-theme owl-carousel">
+        <div class="project">
+          <div class="overlay"></div>
+          <img src="../img/project1.jpg" alt="" />
+          <div class="content">
+            <h2>Gran Asamblea Nacional</h2>
+            <a href="#"><h6>Ver más</h6></a>
           </div>
-          <h3>
-            La educación es el pilar del desarrollo. Esta agrupación propone
-            invertir en docentes, becas y materiales para garantizar
-            oportunidades a todos. Creo en su compromiso con la educación de
-            calidad, porque un país solo avanza cuando su gente tiene acceso al
-            conocimiento
-          </h3>
-          <div class="stars">
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star-half"></i>
-          </div>
-          <i class="bx bxs-quote-alt-left"></i>
         </div>
-        <div class="review">
-          <div class="person">
-            <img src="img/hombre.jpg" alt="" />
-            <h5>Juan Carlos Torrico</h5>
-            <small> Trabajador Independiente (Cochabamba)</small>
+        <div class="project">
+          <div class="overlay"></div>
+          <img src="../img/project2.jpg" alt="" />
+          <div class="content">
+            <h2>Titulo evento</h2>
+            <a href="#"><h6>Ver más</h6></a>
           </div>
-          <h3>
-            Encontrar empleo estable es difícil. Esta agrupación apoya a
-            pequeños emprendedores y fomenta el crecimiento económico real.
-            Necesitamos un país donde trabajar sea sinónimo de progreso y
-            bienestar. Con estas propuestas, Bolivia puede tener empleos dignos
-            y un futuro más próspero para todos.
-          </h3>
-          <div class="stars">
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star-half"></i>
-          </div>
-          <i class="bx bxs-quote-alt-left"></i>
         </div>
-        <div class="review">
-          <div class="person">
-            <img src="img/mujer.jpg" alt="" />
-            <h5>Rosa Gutiérrez</h5>
-            <small>Activista Ambiental (Santa Cruz)</small>
+        <div class="project">
+          <div class="overlay"></div>
+          <img src="../img/project3.jpg" alt="" />
+          <div class="content">
+            <h2>Titulo evento</h2>
+            <a href="#"><h6>Ver más</h6></a>
           </div>
-          <h3>
-            El medio ambiente necesita protección urgente. Esta agrupación
-            propone energías renovables, conservación y agricultura sostenible.
-            Me sumo a su visión porque cuidar la Madre Tierra es garantizar un
-            futuro para nuestros hijos. Bolivia merece políticas ecológicas
-            responsables y un desarrollo sostenible para todos
-          </h3>
-          <div class="stars">
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star-half"></i>
+        </div>
+        <div class="project">
+          <div class="overlay"></div>
+          <img src="../img/project4.jpg" alt="" />
+          <div class="content">
+            <h2>Titulo evento</h2>
+            <a href="#"><h6>Ver más</h6></a>
           </div>
-          <i class="bx bxs-quote-alt-left"></i>
+        </div>
+        <div class="project">
+          <div class="overlay"></div>
+          <img src="../img/project5.jpg" alt="" />
+          <div class="content">
+            <h2>Titulo evento</h2>
+            <a href="#"><h6>Ver más</h6></a>
+          </div>
         </div>
       </div>
     </section>
@@ -279,13 +205,13 @@
       </div>
     </section>
 
-    <footer class="border-top border-danger border-3">
+    <footer>
       <div class="footer-top text-center">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
               <p class="img-footer">
-                <img src="img/morena-white.png" alt="Logo morena" />
+                <img src="../img/morena-white.png" alt="Logo morena" />
               </p>
             </div>
           </div>
@@ -383,9 +309,9 @@
       </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

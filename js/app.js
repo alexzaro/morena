@@ -55,3 +55,20 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
 });
+
+/*********Social media*********/
+let list = document.querySelectorAll(".sci li");
+//console.log(list);
+let bg = document.querySelector(".sectionSocial");
+//console.log(bg);
+list.forEach(function (elements) {
+  //console.log(elements);
+  elements.addEventListener("mouseenter", function (event) {
+    let color = event.target.getAttribute("data-color");
+    //console.log(color);
+    bg.style.backgroundColor = color;
+  });
+  elements.addEventListener("mouseleave", function (event) {
+    bg.style.backgroundColor = "#ffffff";
+  });
+});

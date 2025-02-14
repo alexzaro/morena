@@ -191,10 +191,21 @@ section {
 
 .navbar {
   box-shadow: var(--shadow);
+  border-bottom: 3px solid !important;
+  border-image: linear-gradient(
+      to right,
+      var(--azulMorema),
+      var(--magentaMorena),
+      var(--naranjaMorena),
+      var(--amarilloMorena),
+      var(--verdeMorena),
+      var(--verdeAquaMorena)
+    )
+    1;
 }
 
 .navbar-brand img {
-  width: 200px;
+  width: 180px;
 }
 
 .social-icons a {
@@ -208,7 +219,9 @@ section {
   justify-content: center;
   border-radius: 100px;
 }
-
+.bg-gradiente {
+  background: linear-gradient(90deg, #8e44ad, #c0392b);
+}
 .social-icons a:hover {
   background-color: #fff;
   color: var(--brand);
@@ -284,6 +297,17 @@ section {
 #milestone {
   background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)),
     url(../img/bg_banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-morena {
+  background: linear-gradient(
+      -90deg,
+      rgba(8, 32, 50, 0.7),
+      rgba(8, 32, 50, 0.7)
+    ),
+    url(../img/bg_banner1.jpg), #082032;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -600,4 +624,147 @@ input.form-control {
   width: 100%;
   position: fixed;
   z-index: 10000;
+}
+/*-------REDES SOCIALES----------*/
+.sectionSocial {
+  background-color: #f9f9f9;
+  padding: 97px 0;
+}
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sci {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  color: #333333;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 6px;
+  font-size: 1.5rem;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+  transition: background 0.25s;
+}
+.sci li a:hover.facebook {
+  background: #3b5998;
+}
+.sci li a:hover.twitter {
+  background: #1da1f2;
+}
+.sci li a:hover.instagram {
+  background: #833ab4;
+}
+.sci li a:hover.youtube {
+  background: #ff0000;
+}
+.sci li a:hover.tiktok {
+  background: #25f4ee;
+}
+.sci li a:hover.whatsapp {
+  background: #25d366;
+  color: #ffffff;
+}
+.sci li a i {
+  transition: 0.25s;
+  pointer-events: none;
+}
+.sci li a:hover i {
+  color: #ffffff;
+}
+.sci li::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  /*font-size: 5rem;*/
+  color: #f9f9f9;
+  pointer-events: none;
+  font-weight: 700;
+  transition: 0.5s;
+  opacity: 0;
+}
+.sci li:hover::before {
+  opacity: 0.5;
+  transform: translate(-50%, 45%);
+}
+
+@media only screen and (min-width: 600px) {
+  .sci li a {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    font-size: 2.5rem;
+  }
+  .sci li::before {
+    font-size: 3.5rem;
+  }
+  .sci li:hover::before {
+    transform: translate(-50%, 50%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  /********************REDES SOCIALES*******************/
+  .social-media {
+    display: flex;
+  }
+  .social-media .link-social {
+    color: #ffffff;
+  }
+  .btn-rrss {
+    border-radius: 50%;
+  }
+  .icon-size {
+    font-size: 16px;
+  }
+  .social-icon {
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #ffffff;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .social-icon:hover {
+    opacity: 0.7;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /***********SOCIAL MEDIA***************/
+  .sci li a {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    font-size: 4rem;
+  }
+  .sci li::before {
+    font-size: 5rem;
+  }
+  .sci li:hover::before {
+    transform: translate(-50%, 45%);
+  }
 }
